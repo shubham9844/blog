@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  ::selection {
+      color: #9FEF00;
+  }
+</style>
+
+<title>Simple Blog Page</title>
+<style>
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #141d2b;
+}
+header {
+ background-color: #141d2b;
+ color: #000000;
+ text-align: center;
+ padding: 20px;
+}
+nav {
+ background-color: #1a2332;
+ padding: 10px;
+}
+nav a {
+ color: #fff;
+ text-decoration: none;
+ margin-right: 10px;
+ display: inline-block;
+}
+.container {
+ display: flex;
+ justify-content: space-between;
+ max-width: 95%;
+ margin: 0 auto;
+ padding: 20px;
+}
+article {
+ margin-bottom: 20px;
+ padding: 10px 20px;
+ border: 1px solid #1a2332;
+ background-color: #141d2b;
+ color: #d8dce3;
+ /* text-align: center; */
+
+}
+aside {
+ flex: 1;
+ background-color: #141d2b;
+ padding: 20px;
+ color: #fff;
+}
+footer {
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+ background-color: #1a2332;
+ color: #fff;
+ text-align: center;
+ padding: 10px;
+}
+  h2 {
+    color: #ffffff;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+ <a href="file:///home/parrot/Documents/website/copy/index.html#home">Home</a>
+ <a href="#">About</a>
+ <a href="#">Contact</a>
+</nav>
+<div class="container">
+ <main>
+    <article>
+      <h2>SCADA/ICS Hacking Guide Part 1</h2>
+      <p class="post-meta">Author Shubham</p>
+      <p>SCADA and ICS are the most important cybersecurity issues in this decade. Although traditional IT is still saddled with a number of serious issues including ransomware, the threat to SCADA/ICS systems extends far beyond the individual facility and the profit margins of the individual company. The crippling of a SCADA facility can hamstring an entire nation! Consider the repercussions of a hack against the electrical grid or an oil or gas pipeline or the local water treatment plant.<br>
+        <br>
+        There are 16 critical infrastructure sectors whose assets, systems, and networks, whether physical or virtual, are considered so vital to the United States that their incapacitation or destruction would have a debilitating effect on security, national economic security, national public health or safety.<br>
+      <br>
+      ■ Chemical<br>
+      ■ Commercial<br>
+      ■ Communications<br>
+      ■ Critical manufacturing<br>
+      ■ Dams<br>
+      ■ Defense industrial base<br>
+      ■ Emergency services<br>
+      ■ Energy<br>
+      ■ Financial services<br>
+      ■ Food and agriculture<br>
+      ■ Government facilities<br>
+      ■ Healthcare and public health<br>
+      ■ Information technology<br>
+      ■ Nuclear reactors, materials,and waste<br>
+      ■ Transportation<br>
+      ■ Water and wastewate<br>
+      <br>
+      <b>The Most Important SCADA/ICS Attacks in History</b><br>
+      <br>
+      ■ Stuxnet<br>
+      This hack targeted the Seimens PLC controllers, which were utilized in 2009 to slow down Iran's nuclear program at the uranium enrichment complex at Natanz.<br>
+      It used three zero-days in Microsoft Windows operating system to enter the system and then overwrote the ladder logic of the PLC’s of the uranium centrifuges so that they could not precisely enrich the uranium at the proper concentration.<br>
+      <br>
+
+      ■ Colonial Pipeline<br>
+      the DarkSide group used publicly available information to locate a legacy VPN system setup without multifactor authentication in place. The group gained access to the Colonial systems using a single password, stole 100 GB of data, and ransomware-infected the network. In the end, Colonial paid DarkSide the $4.4 million ransom to get the key to decrypt its infrastructure, but the financial systems were unavailable for five days, which resulted in a gasoline crisis on the US East Coast.<br>
+      <br>
+
+      ■ BlackEnergy3<br>
+      In 2014, malware known as Blackenergy3 was repurposed to target the Ukrainian electricity system. Blackergy3, which was initially created as a DDoS weapon, was modified to allow the attacker to get access to systems within a Ukrainian electricity utility.
+      BlackEnergy3 was a Microsoft Office macro malware that used a vulnerability, CVE-2014-4114 against Microsoft Office 2013, in the OLE packager 2 (packager.dll). This same vulnerability was enumerated as MS14-060 by Microsoft.<br>
+      This attack was eventually used to compromise the Human Machine Interface (HMI) and then control the breakers that control the electrical grid.<br>
+      <br>
+
+      ■ Triton/Triconex<br>
+      December 2017 reported the discovery of the Triton/Triconex virus in the industrial control systems of a petrochemical plant in Saudi Arabia. This malware differs from the others in the group since it is intended to murder humans. The Schneider Electric safety control systems (SIS), which are intended to shut down these facilities in the case of an accident or other harmful occurrence, become infected by this malware.<br>
+      <br>
+
+      ■ Shamoon<br>
+      The purpose of Shamoon was to steal and destroy data from Saudi Aramco, the biggest energy company in the world. During this attack in 2012, an image of a burning American flag replaced the data on the computer systems.Unlike other SCADA/ICS attacks that target the industrial operations, Shamoon targeted the information on the facilities computers. This is unusual, as most SCADA/ICS attacks target the industrial operations and PLC’s within the system that control operations.<br>
+      <br>
+
+      ■ CrashOveride<br>
+      Although CrashOveride, also known as Industroyer, was the first malware created specifically to target electrical grids, we can be sure it won't be the last. The communication protocols used in the energy distribution sector, namely IEC 101, IEC 104, and IEC 61820, are specifically targeted by this virus to attack SCADA facilities.The modules in CrashOveride/Industroyer are designed to open circuit breakers on Remote Terminal Units (RTU) and keep them open by running an infinite loop procedure that keeps even the manual operators, on-site, from closing them. This attack results in the de-energization of substations and forces operators to switch to manual operations to restart power.<br>
+      <br>
+
+      ■ New York Dam<br>
+      In 2013, Iranian hackers were able to access a small dam in New York State in the US. It appears to have been a test to see what they could access and there was little or no damage.The attackers accessed the SCADA controls through a Internet connection via a cellular modem. Luckily, the system was in maintenance mode at the time, so no control features were accessible.<br>
+      <br>
+
+      ■ German Steel Mill<br>
+      In 2014, a German steel mill was attacked with malware that first provided the attackers with access to the business network and the eventually the SCADA/ICS network.The attackers were able to access the industrial control systems and caused multiple failures among these systems. The attackers had an intimate knowledge of the steel mill operations and the industrial control systems that managed it.<br>
+      <br>
+
+      ■ Kemuri<br>
+      The attackers accessed the valve and flow control application that controls the PLC's that mix the water treatment chemical processing (adding the proper chemicals to kill dangerous microbial growth and not so much to kill the humans drinking it). Although little damage was done due to the vigilance of the operators, if the attackers had better knowledge of this SCADA/ICS system, many lives within the community could have been lost and the economy disrupted.
+      <br>
+      <br>
+
+      ■ Night Dragon<br>
+      Unlike other SCADA/ICS attacks, the Night Dragon malware was a series of attacks that gathered information from the oil, energy and petrochemical industry facilities. Often referred to as Tactics, Techniques and Procedures (TTP) attack, this malware gathered information from this industry such as financial documents, operational procedures and bidding.This attack in 2010 highlighted how unprepared the industry was to such attacks. This was a rather unsophisticated attack but could have caused significant damage if the attackers had targeted the HMI or other industrial system controllers.<br>
+      <br>
+      <br>
+      <b>Differences between Security of SCADA and Traditional IT systems</b><br><br>
+      Many of the technologies, modes and mindset of the traditional IT are not applicable to SCADA/ICS systems.Let's discuss a few of the key distinctions between SCADA/ICS systems and standard IT systems.<br>
+      <br>
+      ■ Protecting the Data vs Protecting the Process<br>
+      Usually, our goal while attempting to safeguard traditional IT systems is data protection. These include personally identifiable information (PII), emails, credit card numbers, and intellectual property (IP). We're working to prevent the hacker from getting their hands on this private data.<br>
+      This contrasts sharply with SCADA/ICS systems where our focus is on protecting the process. SCADA/ICS systems are dependent upon continuous processing. In some cases, if one of these plants goes down, it can take weeks or months to restart, costing the owner millions of dollars of down time.
+      <br>
+      <br>
+      ■ Technologies<br>
+      In traditional IT systems, we are accustomed to working with the TCP/IP suite of protocols. These include such protocols as TCP, IP, UDP, DNS, DHCP, etc. Most SCADA/ICS systems utilize one of over 100 protocols usually communicating serially and some proprietary. The most popular of these protocols are Modbus, DNP3, PROFINET/PROFIBUS, OPC, and a few others.<br>
+      SCADA/ICS systems employ Programmable Logic Controllers or PLC's. These PLC's are used for nearly every type of industrial control system, whether manufacturing, petroleum refining, electricity transmission, water treatment etc. Generally, we do not see these PLC's in traditional IT systems. These PLC's are small computer systems utilizing Ladder Logic programming to control sensors, actuators, valves, alarms and other devices.<br>
+      <br>
+      ■ Maintenance and Patching<br>
+      In traditional IT systems, patches and updates are regularly applied to fix vulnerabilities and improve security. SCADA/ICS systems, due to their critical nature and the potential for disruption, often cannot be patched or rebooted except during scheduled maintenance shutdowns. This can leave the system vulnerable to known exploits for extended periods.<br>
+      <br>
+      ■ Lifecycle and Vulnerability<br>
+      The lifecycle of IT technologies is typically shorter, around three to five years, while SCADA/ICS systems can last between fifteen to twenty years. This extended lifecycle can lead to a higher risk of vulnerabilities as attack methods evolve. Many SCADA systems are outdated and still in use, increasing their vulnerability.
+
+
+
+
+
+
+      </p>
+    </article>
+    <aside>
+      <h2>Recent Posts</h2>
+      <ul>
+        <li><a href="#">First Blog Post</a></li>
+        <li><a href="#">Second Blog Post</a></li>
+      </ul>
+    </aside>
+ </main>
+</div>
+<!-- <footer>
+ <p>©All rights reserved.</p>
+</footer> -->
+</body>
+</html>
+
