@@ -81,6 +81,23 @@ footer {
     <article>
       <h2>SCADA/ICS Hacking Guide Part 2</h2>
       <p class="post-meta">Author Shubham</p>
+      <h3>What Is Operational Technology?</h3>
+      <p>Operational technology (OT) is hardware and software that detects or causes change by directly monitoring and/or controlling industrial equipment, facilities, processes, and events. OT is an encompassing term for the systems that keep our critical infrastructure working properly. The many systems that the term OT is referring to are as follows:<br>
+        ■ <b>Industrial Control Systems (ICSs)</b> are used to control processes such as manufacturing and production. These systems include SCADA, DCS, and PLC.12 Because of the interconnectedness of ICS and its peripheral devices, it is an enticing target for attackers.<br><br>
+        ■ <b>Distributed Control Systems (DCSs)</b> are computerized control systems for a process or plant, typically with many loops and distributed autonomous control throughout the system, but without central operator supervision.<br><br>
+        ■ <b>Supervisory Control and Data Acquisition (SCADA)</b> is an architecture that controls computers, communications, and interfaces for the supervision of machines and their processes. SCADA encompasses other devices like PLCs that communicate with other machinery or systems. The PIPEDREAM toolkit targets ICS and SCADA devices to manipulate the speed of motors, identify network components, brute-force PLC passwords, start and stop processes, limit access to ICS systems, bypass firewalls, and make PLCs unavailable.<br><br>
+        ■ <b>Programmable Logic Controllers (PLCs)</b> control processes in manufacturing such as machines, robots, and assembly lines that all require reliability in their function. The “evil PLC” attack weaponizes PLC controllers so the attacker can enter a workstation and pivot to all other PLCs on the network to start and stop processes or access sensitive systems.<br><br>
+        ■ <b>Remote Terminal Units (RTUs)</b> are electronic devices that connect hardware to DCS and SCADA systems within an industrial control system.<br><br>
+      
+      <b>What Is IoT and IIoT?</b><br>
+      The Internet of Things (IoT) is a connected network of objects that contain technologies like software and sensors for exchanging data with other devices connected with the Internet. IoT devices can be everyday household items like refrigerators and televisions.<br>
+      IoT are also heavily integrated into many industrial settings where they control sensors and devices that monitor and manage critical technology. This is called Industrial IoT (IIoT).IoT plays a huge role in the integration of technology with the OT systems used in critical infrastructure, manufacturing, and supply chains. IoT devices maintain and monitor processes, including monitoring events and making adjustments as well as monitoring other devices within industrial systems.<br>
+      For example, in manufacturing, the Industrial Internet of Things (IIoT) employs smart sensors to control temperatures and fine-tune machinery for optimal product production. IoT devices are also utilized in maritime operations for automated vessel docking in smart ports, in rail transportation for real-time train tracking, and in airport logistics for luggage tracking from departure to arrival. Additionally, the energy sector leverages IoT for smart grids, predictive maintenance alerts, and disaster-ready predictive meters.<br>
+
+       
+      </p>
+
+      
       <h3>Finding SCADA/ICS Systems</h3>
       <p>Unlike Ethernet or Internet Protocols (IP), the industrial control industry uses multiple protocols, often unique to the manufacturer of the programmable logic controllers (PLC). Although there are many protocols, some of the more popular communication protocols within these systems are:<br><br>
         ■ CoDeSys<br>
@@ -129,7 +146,15 @@ footer {
         A fieldbus is a member of a family of industrial digital communication networks used for real-time distributed control.<br><br>
 
         ■ profinet<br>
-        It is a communication protocol designed to exchange data between controllers and devices in an automation setting.<br><br>
+        It is a communication protocol designed to exchange data between controllers and devices in an automation setting.<br><br><br>
+
+        SCADA,ICS and IIoT can indeed be found on platforms like Shodan, FOFA, Censys, and Google. These platforms are used to search for devices and systems connected to the internet, including those that are part of SCADA/ICS infrastructures. These platforms enables us to search the banners and the information or parameters they reveal.<br><br>
+        Large catalog of shodan queries to search for:<br>
+        Control System (ICS)<br>
+        Operational Technology (OT)<br>
+        Industrial Internet of Things (IIoT)<br>
+        <a href="https://www.icsrank.com/">https://www.icsrank.com/</a>
+
 
 
 
