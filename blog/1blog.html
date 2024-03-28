@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  ::selection {
+      color: #9FEF00;
+  }
+</style>
+
+<title>Simple Blog Page</title>
+<style>
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #141d2b;
+}
+header {
+ background-color: #141d2b;
+ color: #000000;
+ text-align: center;
+ padding: 20px;
+}
+nav {
+ background-color: #1a2332;
+ padding: 10px;
+}
+nav a {
+ color: #fff;
+ text-decoration: none;
+ margin-right: 10px;
+ display: inline-block;
+}
+.container {
+ display: flex;
+ justify-content: space-between;
+ max-width: 95%;
+ margin: 0 auto;
+ padding: 20px;
+}
+article {
+ margin-bottom: 20px;
+ padding: 10px 20px;
+ border: 1px solid #1a2332;
+ background-color: #141d2b;
+ color: #d8dce3;
+ /* text-align: center; */
+
+}
+aside {
+ flex: 1;
+ background-color: #141d2b;
+ padding: 20px;
+ color: #fff;
+}
+footer {
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+ background-color: #1a2332;
+ color: #fff;
+ text-align: center;
+ padding: 10px;
+}
+  h2 {
+    color: #ffffff;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+ <a href="file:///home/parrot/Documents/website/copy/index.html#home">Home</a>
+ <a href="#">About</a>
+ <a href="#">Contact</a>
+</nav>
+<div class="container">
+ <main>
+    <article>
+      <h2>SCADA/ICS Hacking Guide Part 2</h2>
+      <p class="post-meta">Author Shubham</p>
+      <h3>Finding SCADA/ICS Systems</h3>
+      <p>Unlike Ethernet or Internet Protocols (IP), the industrial control industry uses multiple protocols, often unique to the manufacturer of the programmable logic controllers (PLC). Although there are many protocols, some of the more popular communication protocols within these systems are:<br><br>
+        ■ CoDeSys<br>
+        Codesys is an integrated development environment for programming controller applications according to the international industrial standard IEC 61131-3.<br><br>
+        
+        ■ SIEMENS<br>
+        S7 (S7 Communication) is a Siemens proprietary protocol that runs between programmable logic controllers (PLCs) of the Siemens S7 family.<br><br>
+
+        ■ GE-SRTP<br>
+        Service Request Transport Protocol (GE-SRTP) protocol is developed by GE Intelligent Platforms (earlier GE Fanuc) for transfer of data from PLCs<br><br>
+
+        ■ omron<br>
+        Factory Interface Network Service, is a network protocol used by Omron PLCs, over different physical networks.<br><br>
+
+        ■ Modbus<br>
+        Modbus is a data communications protocol originally published by Modicon in 1979 for use with its programmable logic controllers.<br><br>
+
+        ■ fox<br>
+        The Fox protocol is part of Tridium's Niagara framework, which is widely used in building automation control systems.<br><br>
+
+        ■ EtherNet/IP<br>
+        EtherNet/IP is an industrial network protocol that adapts the Common Industrial Protocol to standard Ethernet.<br><br>
+
+        ■ dnp<br>
+        Distributed Network Protocol 3 (DNP3) is a set of communications protocols used between components in process automation systems. Its main use is in utilities such as electric and water companies.<br><br>
+
+        ■ BACnet<br>
+        BACnet is a communication protocol for building automation and control networks that use the ASHRAE, ANSI, and ISO 16484-5 standards protocol.<br><br>
+
+        ■ MELSEC-Q<br>
+        The MELSEC-Q family of devices uses dedicated network protocols for communication and provides high-speed, high-capacity data processing and machine control.<br><br>
+
+        ■ PCWorx<br>
+        PCWorx is a protocol and program by Phoenix Contact used by a wide range of industries.<br><br>
+
+        ■ redlion<br>
+        The protocol is used by Crimson desktop software for HMI interface with Red Lion G306 industrial control system.<br><br>
+
+        ■ IEC 60870-5-104<br>
+        IEC 60870 part 5 is one of the IEC 60870 set of standards which define systems used for telecontrol in electrical engineering and power system automation applications.<br><br>
+
+        ■ moxa-nport<br>
+        Moxa nport is designed for industrial applications. Serial port servers with different configuration combinations can better meet the requirements of different industrial sites.<br><br>
+
+        ■ Fieldbus<br>
+        A fieldbus is a member of a family of industrial digital communication networks used for real-time distributed control.<br><br>
+
+        ■ profinet<br>
+        It is a communication protocol designed to exchange data between controllers and devices in an automation setting.<br><br>
+
+
+
+      </p>
+    </article>
+    <aside>
+      <h2>Recent Posts</h2>
+      <ul>
+        <li><a href="#">First Blog Post</a></li>
+        <li><a href="#">Second Blog Post</a></li>
+      </ul>
+    </aside>
+ </main>
+</div>
+<!-- <footer>
+ <p>©All rights reserved.</p>
+</footer> -->
+</body>
+</html>
+
