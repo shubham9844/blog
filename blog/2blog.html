@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  ::selection {
+      color: #9FEF00;
+  }
+</style>
+
+<title>Simple Blog Page</title>
+<style>
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #141d2b;
+}
+header {
+ background-color: #141d2b;
+ color: #000000;
+ text-align: center;
+ padding: 20px;
+}
+nav {
+ background-color: #1a2332;
+ padding: 10px;
+}
+nav a {
+ color: #fff;
+ text-decoration: none;
+ margin-right: 10px;
+ display: inline-block;
+}
+.container {
+ display: flex;
+ justify-content: space-between;
+ max-width: 95%;
+ margin: 0 auto;
+ padding: 20px;
+}
+article {
+ margin-bottom: 20px;
+ padding: 10px 20px;
+ border: 1px solid #1a2332;
+ background-color: #141d2b;
+ color: #d8dce3;
+ /* text-align: center; */
+
+}
+aside {
+ flex: 1;
+ background-color: #141d2b;
+ padding: 20px;
+ color: #fff;
+}
+footer {
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+ background-color: #1a2332;
+ color: #fff;
+ text-align: center;
+ padding: 10px;
+}
+  h2 {
+    color: #ffffff;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+ <a href="file:///home/parrot/Documents/website/copy/index.html#home">Home</a>
+ <a href="#">About</a>
+ <a href="#">Contact</a>
+</nav>
+<div class="container">
+ <main>
+    <article>
+      <h2>Exploiting the web interface of the SCADA/ICS system</h2>
+      <p class="post-meta">Author Shubham</p>
+      <!-- <h3>What Is Operational Technology?</h3> -->
+      <p>To get in here, you'll need your web exploitation skill.<br>
+        These days, a lot of sites require authentication to access, so you have to bypass them, and also some are currently vulnerable to abuse.<br>
+        which provide a graphical user interface for operators to observe the status of a system, receive alarms, or enter system adjustments to manage the process under control.<br>
+        <br>
+        These are some of them that I found on the internet<br><br>
+        <b>X-Ray Machines (authentication protection)</b><br><br>
+        <img src="./pic/picture/X-Ray_Machines.png" width="750" height="500"><br><br><br>
+        
+        <b>Energy meter data (without any protection)</b><br><br>
+        <img src="./pic/picture/energy_meter_data.png" width="750" height="500"><br><br>
+        <img src="./pic/picture/network_capture.png" width="800" height="500"><br><br>
+        <img src="./pic/picture/debug_console.png" width="800" height="500"><br><br><br>
+
+        <b>Vehicle Tracking System</b><br><br>
+        <img src="./pic/picture/vehical_tracking_system.png" width="800" height="500"><br><br>
+        
+
+       
+      </p>
+
+
+
+    </article>
+    <aside>
+      <h2>Recent Posts</h2>
+      <ul>
+        <li><a href="#">First Blog Post</a></li>
+        <li><a href="#">Second Blog Post</a></li>
+      </ul>
+    </aside>
+ </main>
+</div>
+<!-- <footer>
+ <p>©All rights reserved.</p>
+</footer> -->
+</body>
+</html>
+
